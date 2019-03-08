@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/options.css">
+	<script src="../js/options.js"></script>
+	<style>
+	body{font-size: 16px;width: 400px; height: 300px;padding: 10px;font-family: 'Microsoft Yahei'; }
+	#status {color:red;}
+	</style>
+	<title>插件配置页</title>
+</head>
+<body>
+	<h1>配置</h1>
+	<h2>下载音视频</h2>
+	<div>
+		<table id="options">
+			<tr>
+				<td class="caption">监控的网址</td>
+				<td>
+					<div class="help">
+						<div class="example">
+							Wholly or partially disable Vimium.  "Patterns" are URL regular expressions;
+							additionally, "*" matches any zero or more characters.
+							<br/><br/>
+							If "Keys" is left empty, then Vimium is wholly disabled.
+							Otherwise, just the listed keys are disabled (they are passed through).
+						</div>
+					</div>
+					<div>
+						 <div id="downloadUrlsScrollBox">
+						 </div>
+						 <button id="downloadUrlsAddButton">添加网址</button>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!-- Some extra space which is hidden underneath the footer. -->
+	<div id="endSpace"/>
+
+	<div id="footer">
+		<div id="footerWrapper">
+			<table id="footerTable">
+				<tr>
+					<td id="footerTableData">
+						<span id="helpText">
+							Type <strong>?</strong> to show the help dialog.
+							<br/>
+							Type <strong>Ctrl-Enter</strong> to save <i>all</i> options.
+						</span>
+					</td>
+					<td id="saveOptionsTableData" nowrap>
+						<!--
+						<button id="advancedOptionsButton"></button>
+						-->
+						<button id="saveOptions" disabled="true">No Changes</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

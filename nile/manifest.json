@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "nile",
+	"version": "1.0.0",
+	"description": "wy的chrome extention",
+	"icons":
+	{
+		"16": "img/nile.png",
+		"48": "img/nile.png",
+		"128": "img/nile.png"
+	},
+	"background":
+	{
+		"scripts": ["js/background.js"]
+	},
+	"permissions":
+	[
+		"downloads",
+		"notifications",
+		"storage",
+		"webRequest",
+		"webRequestBlocking",
+		"http://*/*",
+		"https://*/*"
+	],
+	"options_page": "pages/options.html"
+}
